@@ -1,0 +1,171 @@
+:root {
+  --border-peach: #FDA785;
+  --dark-peach: #FDA785;
+  --background: rgba(255, 216, 204, 0.2);
+  --black: #000000;
+  --light-peach: #FFF2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "helvetica", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--black);
+  font-size: 13px;
+}
+
+h1 {
+  color: #DD7D5D;
+  text-align: center;
+  margin: 0 0 50px;
+  font-family: cursive;
+}
+
+footer {}
+
+a {
+  color: var(--black)
+}
+
+.logo_image {
+  width: 25%;
+  display: block;
+  margin: 30px auto;
+}
+
+.navigation_menu {
+  display: inline-block;
+  position: relative;
+  /* Move the element to the right by 50% of the container's width */
+  left: 50%;
+  /* Calculates 50% of the element's width, and moves it by that */
+  /* amount across the X-axis to the left */
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  /*border: 2px solid var(--border-peach);
+  border-radius: 24px;*/
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 15px;
+  border-color: #FDA785;
+  /* border-image: linear-gradient(to right, #ffecd2, #fcb69f) 1; */
+  font-size: 2em;
+}
+
+
+
+.navigation_item {
+  margin: 0 10px;
+}
+
+.grid-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+.recipe_grid {
+  margin: 25px 0;
+}
+
+.recipe_list_image {
+  width: 23vw;
+}
+
+.recipe_list_name {
+  text-align: center;
+  font-size: 0.4rem;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.recipe_detail_image {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+.recipe_detail_name {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.recipe {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.recipe_ingredients {
+  flex-basis: 20%;
+  padding: 36px 15px 60px 0;
+}
+
+.h3-ingredients {
+  padding-bottom: 10px;
+}
+
+.ingredients_detail {
+  margin: 10px 0;
+}
+
+.recipe_describtion {
+  flex-basis: 80%;
+  padding: 36px 0 60px 15px;
+}
+
+/******************* START RECIPE GRID ********************/
+.h3-directions {
+  padding-bottom: 10px;
+}
+
+.recipe_directions {
+  margin: 10px 0;
+}
+
+.copyright {
+  color: var(--black);
+  margin-bottom: 0;
+  padding: 20px 0;
+  font-size: 0.2rem;
+  text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 650px) {
+  .grid-main-container {
+    margin-left: 85px;
+  }
+
+.navigation_menu{
+font-size: 0.9em;
+}
+
+}
+
+@media (min-width: 260px) {
+  .grid-main-container {
+    margin-left: 85px;
+  }
+}

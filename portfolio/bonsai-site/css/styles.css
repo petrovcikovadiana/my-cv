@@ -1,0 +1,147 @@
+:root {
+    --green: #00c1b5;
+    --yellow: #ffbe00;
+    --orange: #ff651a;
+    --blue: #1d3fbb;
+    --red: #e30512
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-text-smoothing: antialiased;
+    font-size: 1rem;
+}
+
+.section1 {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #e30512;
+}
+
+.section2 {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #ffbe00;
+}
+
+.section3 {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #ff651a;
+}
+
+.section4 {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #1d3fbb;
+}
+
+.section5 {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: #00c1b5;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mail {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.book-layout {
+    display: flex;
+    justify-content: center;
+}
+
+.book-cover {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.issue-cover {
+    text-align: center;
+}
+
+.text {
+    margin-top: 28rem;
+}
+
+.txt {
+    flex-basis: 33%;
+    margin-left: 20px;
+}
+
+.issue-list {
+    display: flex;
+    flex-basis: 33%;
+    margin-top: 32rem;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+@media (max-width: 1440px) {
+    .text {
+        margin-top: 20.1rem;
+        height: 100%;
+    }
+
+    .issue-list {
+        margin-top: 22rem;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 0.7rem;
+    }
+
+    .book-layout {
+        height: 100%;
+    }
+
+    .book-cover {
+        width: 20%;
+    }
+
+    .text {
+        margin-top: 9.5rem;
+        font-size: 0.5rem;
+    }
+
+    .issue-list {
+        margin-top: 9.5rem;
+    }
+}
