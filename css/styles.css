@@ -226,7 +226,7 @@ header {
 
 .work_experience_header {
     text-align: center;
-    margin: 60px;
+    margin: 60px 0;
 }
 
 .work_container {
@@ -257,7 +257,6 @@ header {
     text-align: start;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     flex-basis: 23%;
-    /* font-size: 1rem; */
     margin-top: 17px;
     flex-wrap: wrap;
 }
@@ -295,7 +294,6 @@ header {
 .section_portfolio {
     height: auto;
     width: 100vw;
-    padding: 1rem 10rem;
 }
 
 .portfolio_header {
@@ -307,12 +305,13 @@ header {
     padding-bottom: 3rem;
     display: flex;
     height: auto;
-    width: auto;
     gap: 30px;
+    max-width: 70%;
+    margin: auto;
 }
 
 .portfolio_iframe {
-    flex-basis: 50%;
+    flex-grow: 1;
 }
 
 .vertical_line {
@@ -333,13 +332,13 @@ iframe {
 }
 
 .portfolio_description {
-    flex-basis: 40%;
     list-style-position: inside;
+    flex-grow: 1;
 }
 
 .portfolio_technology {
-    flex-basis: 10%;
     list-style-position: inside;
+    flex-grow: 1;
 }
 
 .properties {
@@ -397,13 +396,25 @@ iframe {
     }
 }
 
+/* Extra large devices (desktops, 2560 and up) */
+
+@media (min-width: 2560px) {
+    .flower_left {
+        left: 42.6%;
+    }
+
+    .flower_right {
+        left: 57.5%;
+    }
+}
+
 /* Extra large devices (laptops/desktops, 1920 and up) */
 
 @media (min-width: 1921px) {
 
     li,
     a {
-        font-size: 25px;
+        font-size: 1.2rem;
     }
 
     .about_me_text {
@@ -415,23 +426,21 @@ iframe {
     }
 
     .work_container_left {
-        left: 60%;
+        left: 40%;
     }
 
     .work_container_right {
-        left: 40%;
+        left: 60%;
     }
-}
 
-/* Large devices (laptops/desktops, 1920 and down) */
-@media (max-width: 1920px) {
-    /* .section_portfolio {
-        padding: 1rem 16rem;
-    } */
+    .flower_left {
+        left: 40%;
+        top: 41.6%;
+    }
 
-    li,
-    a {
-        font-size: 20px;
+    .flower_right {
+        left: 60%;
+        top: 41.6%;
     }
 }
 
@@ -447,10 +456,6 @@ iframe {
 
     .list_properties {
         margin: 0;
-    }
-
-    .portfolio_description {
-        padding-left: 20px;
     }
 
     .flower_left {
