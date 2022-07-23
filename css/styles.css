@@ -22,7 +22,7 @@
 li,
 a {
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 17px;
     text-decoration: none;
 }
 
@@ -193,7 +193,7 @@ header {
     top: 80%;
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
-    font-size: 0.8rem;
+    font-size: 20px;
 }
 
 @keyframes fadeIn {
@@ -240,7 +240,7 @@ header {
     border-radius: 20px;
     width: 694px;
     height: auto;
-    font-size: 0.7em;
+    /* font-size: 1rem; */
     transform: translateX(-50%);
     margin-top: 30px;
 }
@@ -257,7 +257,7 @@ header {
     text-align: start;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     flex-basis: 23%;
-    font-size: 1em;
+    /* font-size: 1rem; */
     margin-top: 17px;
     flex-wrap: wrap;
 }
@@ -295,7 +295,7 @@ header {
 .section_portfolio {
     height: auto;
     width: 100vw;
-    padding: 1rem 7rem;
+    padding: 1rem 10rem;
 }
 
 .portfolio_header {
@@ -333,12 +333,12 @@ iframe {
 }
 
 .portfolio_description {
-    flex-basis: 35%;
+    flex-basis: 40%;
     list-style-position: inside;
 }
 
 .portfolio_technology {
-    flex-basis: 25%;
+    flex-basis: 10%;
     list-style-position: inside;
 }
 
@@ -397,15 +397,46 @@ iframe {
     }
 }
 
-/* Large devices (laptops/desktops, 1920 and down) */
-@media (min-width: 1900px) {
+/* Extra large devices (laptops/desktops, 1920 and up) */
+
+@media (min-width: 1921px) {
+
+    li,
+    a {
+        font-size: 25px;
+    }
+
+    .about_me_text {
+        font-size: 25px;
+    }
+
     .section_portfolio {
+        padding: 1rem 22rem;
+    }
+
+    .work_container_left {
+        left: 60%;
+    }
+
+    .work_container_right {
+        left: 40%;
+    }
+}
+
+/* Large devices (laptops/desktops, 1920 and down) */
+@media (max-width: 1920px) {
+    /* .section_portfolio {
         padding: 1rem 16rem;
+    } */
+
+    li,
+    a {
+        font-size: 20px;
     }
 }
 
 /* Macbook 13 Air (1440 and down) */
-@media (max-width: 1600px) {
+@media (max-width: 1440px) {
     .work_experience_header {
         text-align: center;
     }
@@ -443,7 +474,7 @@ iframe {
     }
 
     .about_me {
-        font-size: 0.7rem;
+        font-size: 1rem;
         left: 50%;
         top: 70%;
     }
@@ -504,7 +535,7 @@ iframe {
     }
 
     .about_me_text {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .work_container {
