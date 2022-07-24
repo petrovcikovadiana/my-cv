@@ -396,12 +396,12 @@ iframe {
 
 @media (min-width: 2500px) {
     .flower_left {
-        left: 42.6% !important;
+        left: 42.6%;
         top: 41.4%;
     }
 
     .flower_right {
-        left: 57.5% !important;
+        left: 57.5%;
         top: 41.4%;
     }
 
