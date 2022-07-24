@@ -226,7 +226,7 @@ header {
 
 .work_experience_header {
     text-align: center;
-    margin: 60px;
+    margin: 60px 0;
 }
 
 .work_container {
@@ -257,7 +257,6 @@ header {
     text-align: start;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     flex-basis: 23%;
-    /* font-size: 1rem; */
     margin-top: 17px;
     flex-wrap: wrap;
 }
@@ -293,9 +292,9 @@ header {
 }
 
 .section_portfolio {
+    margin: auto;
+    max-width: 75%;
     height: auto;
-    width: 100vw;
-    padding: 1rem 10rem;
 }
 
 .portfolio_header {
@@ -307,12 +306,12 @@ header {
     padding-bottom: 3rem;
     display: flex;
     height: auto;
-    width: auto;
     gap: 30px;
+    margin: auto;
 }
 
 .portfolio_iframe {
-    flex-basis: 50%;
+    flex-grow: 1;
 }
 
 .vertical_line {
@@ -333,13 +332,13 @@ iframe {
 }
 
 .portfolio_description {
-    flex-basis: 40%;
     list-style-position: inside;
+    flex-grow: 1;
 }
 
 .portfolio_technology {
-    flex-basis: 10%;
     list-style-position: inside;
+    flex-grow: 1;
 }
 
 .properties {
@@ -397,42 +396,53 @@ iframe {
     }
 }
 
-/* Extra large devices (laptops/desktops, 1920 and up) */
+/* Extra large devices (desktops, 2560 and up) */
 
-@media (min-width: 1921px) {
-
-    li,
-    a {
-        font-size: 25px;
+@media (min-width: 2500px) {
+    .flower_left {
+        left: 42.6%;
     }
 
-    .about_me_text {
-        font-size: 25px;
-    }
-
-    .section_portfolio {
-        padding: 1rem 22rem;
-    }
-
-    .work_container_left {
-        left: 60%;
-    }
-
-    .work_container_right {
-        left: 40%;
+    .flower_right {
+        left: 57.5%;
     }
 }
 
-/* Large devices (laptops/desktops, 1920 and down) */
-@media (max-width: 1920px) {
-    /* .section_portfolio {
-        padding: 1rem 16rem;
-    } */
+/* Extra large devices (laptops/desktops, 1920 and up) */
+
+@media (min-width: 1920px) {
 
     li,
     a {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
+
+    .about_me_text {
+        font-size: 1.3rem;
+    }
+
+    .work_container_left {
+        left: 40%;
+    }
+
+    .work_container_right {
+        left: 60%;
+    }
+
+    .flower_left {
+        left: 40%;
+        top: 41.6%;
+    }
+
+    .flower_right {
+        left: 60%;
+        top: 41.6%;
+    }
+
+    .section_portfolio {
+        max-width: 60%;
+    }
+
 }
 
 /* Macbook 13 Air (1440 and down) */
@@ -449,16 +459,17 @@ iframe {
         margin: 0;
     }
 
-    .portfolio_description {
-        padding-left: 20px;
-    }
-
     .flower_left {
         left: 37%;
     }
 
     .flower_right {
         left: 63%;
+    }
+
+    .section_portfolio {
+        max-width: 60%;
+        margin: auto;
     }
 }
 
@@ -495,10 +506,6 @@ iframe {
 
     .work_description {
         list-style-position: inside;
-    }
-
-    .container_portfolio {
-        padding: 0;
     }
 
     iframe {
@@ -556,10 +563,6 @@ iframe {
         list-style-position: inside;
     }
 
-    .container_portfolio {
-        padding: 0;
-    }
-
     iframe {
         width: 260px;
         height: 340px;
@@ -581,4 +584,10 @@ iframe {
     .list_properties {
         margin-left: 60px;
     }
+}
+
+.debug_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
