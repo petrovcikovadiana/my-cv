@@ -396,15 +396,15 @@ iframe {
 
 @media (min-width: 2500px) {
     .flower_left {
-        left: 42.6%;
+        left: 42.6% !important;
     }
 
     .flower_right {
-        left: 57.5%;
+        left: 57.5% !important;
     }
 
     .section_portfolio {
-        max-width: 50% !important;
+        max-width: 50%;
     }
 }
 
