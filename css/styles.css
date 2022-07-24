@@ -401,6 +401,7 @@ iframe {
 
     .flower_right {
         left: 57.5% !important;
+        position: relative;
     }
 
     .section_portfolio {
