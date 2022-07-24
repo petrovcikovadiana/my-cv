@@ -397,11 +397,12 @@ iframe {
 @media (min-width: 2500px) {
     .flower_left {
         left: 42.6% !important;
+        top: 41.4%;
     }
 
     .flower_right {
         left: 57.5% !important;
-        position: relative;
+        top: 41.4%;
     }
 
     .section_portfolio {
@@ -411,7 +412,7 @@ iframe {
 
 /* Extra large devices (laptops/desktops, 1920 and up) */
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2400px) {
 
     li,
     a {
