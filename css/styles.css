@@ -293,7 +293,7 @@ header {
 
 .section_portfolio {
     margin: auto;
-    max-width: 75%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -308,10 +308,6 @@ header {
     height: auto;
     gap: 30px;
     margin: auto;
-}
-
-.portfolio_iframe {
-    flex-grow: 1;
 }
 
 .vertical_line {
@@ -406,6 +402,10 @@ iframe {
     .flower_right {
         left: 57.5%;
     }
+
+    .section_portfolio {
+        max-width: 50% !important;
+    }
 }
 
 /* Extra large devices (laptops/desktops, 1920 and up) */
@@ -468,7 +468,7 @@ iframe {
     }
 
     .section_portfolio {
-        max-width: 60%;
+        max-width: 80%;
         margin: auto;
     }
 }
