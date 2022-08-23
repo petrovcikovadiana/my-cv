@@ -157,15 +157,13 @@ h3 {
 }
 
 /* Modal Content/Box */
-.modals-content {
+/* .modals-content {
     background-color: #F6F6F6;
     /* 15% from the top and centered */
-    font-size: 21px;
+/* font-size: 21px;
 
-    /* Could be more or less, depending on screen size */
-}
-
-*/
+    /* Could be more or less, depending on screen size 
+} */
 /* The Close Button
 .closes {
     color: #aaa;
