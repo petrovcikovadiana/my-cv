@@ -59,7 +59,8 @@ h3 {
 }
 
 .show_modal:hover {
-    color: var(--navlinkHoverColor)
+    color: var(--navlinkHoverColor);
+    letter-spacing: 1px;
 }
 
 .close_modal {
@@ -129,7 +130,7 @@ h3 {
     z-index: 5;
 }
 
-
+/* 
 .overlays {
     position: absolute;
     top: 0;
@@ -138,11 +139,10 @@ h3 {
     height: 100%;
     backdrop-filter: blur(2px);
     z-index: 5;
-}
-
+} */
 
 /* The Modal (background) */
-.modals {
+/* .modals {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -165,7 +165,8 @@ h3 {
     /* Could be more or less, depending on screen size */
 }
 
-/* The Close Button */
+*/
+/* The Close Button
 .closes {
     color: #aaa;
     float: right;
@@ -192,8 +193,9 @@ h3 {
 }
 
 .show_modal_news:hover {
-    color: var(--navlinkHoverColor)
-}
+    color: var(--navlinkHoverColor);
+    letter-spacing: 1px;
+} */
 
 .nav_links {
     list-style: none;
@@ -209,7 +211,8 @@ h3 {
 }
 
 .nav_links li a:hover {
-    color: var(--navlinkHoverColor)
+    color: var(--navlinkHoverColor);
+    letter-spacing: 1px;
 }
 
 .contact_me {
@@ -217,7 +220,8 @@ h3 {
 }
 
 .contact_me:hover {
-    color: var(--navlinkHoverColor)
+    color: var(--navlinkHoverColor);
+    letter-spacing: 1px;
 }
 
 .top_container {
